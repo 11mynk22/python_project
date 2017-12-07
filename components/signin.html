@@ -1,0 +1,25 @@
+<div class="container">
+
+    <form class="form-signin" action="/welcome" method="post">
+        <h2 class="form-signin-heading">Sign In</h2>
+        <fieldset>
+            <div class="form-group">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+            </div>
+            <div class="form-group">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            </div>
+            <div class="checkbox">
+                <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+            </div>
+            <button class="btn btn-lg btn-success btn-block" name="signin_btn" type="submit">Sign in</button><br>
+            <center>
+                <p><a href="#/admin_login">Admin login</a></p>
+                <p><a href="#">Forgot password?</a></p>
+                <a href="#/signup">Don't have an account? Sign up</a>
+            </center>
+        </fieldset>
+    </form>
+</div>

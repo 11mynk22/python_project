@@ -1,0 +1,47 @@
+<div class="table-scrol">
+    <h1 align="center">All the Users</h1>
+
+    <h4><a href="#/logout">Logout</a></h4>
+
+    <div class="table-responsive">
+        <!--this is used for responsive display in mobile and other devices-->
+
+
+        <table class="table table-bordered table-hover table-striped" style="table-layout: fixed">
+            <thead>
+
+                <tr>
+
+                    <th>User Id</th>
+                    <th>User Name</th>
+                    <th>User E-mail</th>
+                    <th>User Pass</th>
+                    <th>Delete User</th>
+                </tr>
+            </thead>
+
+
+
+            <tr>
+                <!--here showing results in the table -->
+                <td>
+                    <?php echo $user_id;  ?>
+                </td>
+                <td>
+                    <?php echo $user_name;  ?>
+                </td>
+                <td>
+                    <?php echo $user_email;  ?>
+                </td>
+                <td>
+                    <?php echo $user_pass;  ?>
+                </td>
+                <td><a href="delete.php?del<?php echo $user_id ?>"><button class="btn btn-danger">Delete</button></a></td>
+                <!--btn btn-danger is a bootstrap button to show danger-->
+            </tr>
+
+            <?php } ?>
+
+        </table>
+    </div>
+</div>
